@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+    .box 
+        {
+            background:gray;
+            height:400px;
+            width:400px;
+        }
+    </style>
+  
+</head>
+<body>
+  
+    <div class="box">
+      <h1>Change This Text</h1>
+    </div>
+    
+    <button class="hide">fade me</button>
+      <input id="test3" type="text">
+    <p id="typing">mm</p>
+    <script>
+        $(".hide").click
+        (
+            function()
+            {
+                $(".box").fadeIn();
+                $(".box").fadeOut();
+                $(".box").fadeToggle();
+                $(".box").fadeTo(); // Make Search
+                $(".box").scroll(); // Make Search
+                $(".box").scrollLeft(); // Make Search
+                $(".box").scrollTop; // Make Search
+                
+            }
+        );
+        
+      
+       var t =   $(".box").html();
+        console.log(t);
+        
+        $('#test3').keyup(
+            function()
+            {
+         word = $(this).val();
+                $("#typing").text(word);
+            });
+    </script>
+    
+</body>
+</html>
